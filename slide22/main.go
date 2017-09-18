@@ -1,14 +1,13 @@
-package export
+package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-var Exported = "I'm going to be available outside this package"
-var notExported = "I will only be available within this package"
-
-func ExportedFunction() {
-	fmt.Println(Exported)
-}
-
-func notExportedFunction() {
-	fmt.Println(notExported)
+/* I am
+a multiline
+*/
+func main() {
+	//I am a single line comment
+	fmt.Printf("%v\n", []byte("String as bytes slice"))
 }
